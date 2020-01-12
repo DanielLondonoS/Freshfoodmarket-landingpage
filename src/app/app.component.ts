@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ApiserviceService } from './servicios/apiservice.service';
 
+// import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
