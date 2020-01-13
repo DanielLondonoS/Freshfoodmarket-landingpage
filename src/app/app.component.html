@@ -12,10 +12,10 @@
           <a class="nav-link js-scroll-trigger" href="#download">Descargar</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#features">Caracteristicas</a>
+          <a class="nav-link js-scroll-trigger" href="#features">Características</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#contact">Contactanos</a>
+          <a class="nav-link js-scroll-trigger" href="#contact">Contáctanos</a>
         </li>
       </ul>
     </div>
@@ -69,7 +69,7 @@
   <div class="container">
     <div class="section-heading text-center">
       <h2>Marcas aliadas</h2>
-      <p class="text-muted">Por que queremos brindarte lo mejor, nos aliamos con las mejores marcas del mercado!</p>
+      <p class="text-muted">Porque queremos brindarte lo mejor, nos aliamos con las mejores marcas del mercado!</p>
       <hr>
     </div>
     <div class="row">
@@ -102,7 +102,7 @@
               <div class="feature-item">
                 <i class="icon-earphones-alt text-primary"></i>
                 <h3>Servicios</h3>
-                <p class="text-muted">Todo lo que necesites aqui lo puedes encontrar!</p>
+                <p class="text-muted">Todo lo que necesites aquí lo puedes encontrar!</p>
               </div>
             </div>
           </div>
@@ -117,7 +117,7 @@
             <div class="col-lg-6">
               <div class="feature-item">
                 <i class="icon-screen-smartphone text-primary"></i>
-                <h3>Facil de usar</h3>
+                <h3>Fácil de usar</h3>
                 <p class="text-muted">Todo en una app a un solo click!</p>
               </div>
             </div>
@@ -132,7 +132,7 @@
   <div class="cta-content">
     <div class="container">
       <h2>Tienes tu marca propia?<br>Pauta con nosotros.</h2>
-      <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">Contactanos!</a>
+      <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">Contáctanos!</a>
     </div>
   </div>
   <div class="overlay"></div>
@@ -155,8 +155,8 @@
           <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
         </div>
         <div class="form-group">
-          <label for="correo">Correo Electronico</label>
-          <input type="email" formControlName="correo" class="form-control" id="correo" name="correo" [(ngModel)]="correo" placeholder="Ingresa Tu Correo Electronico">
+          <label for="correo">Correo Electrónico</label>
+          <input type="email" formControlName="correo" class="form-control" id="correo" name="correo" [(ngModel)]="correo" placeholder="Ingresa Tu Correo Electrónico">
           <div *ngIf="formularioContacto.get('correo').errors && formularioContacto.get('correo').dirty">
             <p *ngIf="formularioContacto.get('correo').hasError('required')" style="color:red;">*El correo es requerido</p>
             <p *ngIf="formularioContacto.get('correo').hasError('email')" style="color:red;">*Ingrese un correo valido</p>
@@ -164,8 +164,8 @@
         </div>
         
         <div class="form-group">
-          <label for="celular">Numero Celular</label>
-          <input type="number" class="form-control" formControlName="celular" id="celular" [(ngModel)]="celular" aria-describedby="emailHelp" placeholder="Ingresa Tu Numero Celular">
+          <label for="celular">Número Celular</label>
+          <input type="number" class="form-control" formControlName="celular" id="celular" [(ngModel)]="celular" aria-describedby="emailHelp" placeholder="Ingresa Tu Número Celular">
           <div *ngIf="formularioContacto.get('celular').errors && formularioContacto.get('celular').dirty">
             <p *ngIf="formularioContacto.get('celular').hasError('required')" style="color:red;">*El celular es requerido</p>
           </div>
@@ -220,7 +220,7 @@
   </div>
 </footer>
 
-<!-- <ng-template #content let-modal>
+<ng-template #content let-modal>
   <div class="modal-header">
     <h4 class="modal-title" id="modal-basic-title">Información</h4>
     <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
@@ -228,11 +228,11 @@
     </button>
   </div>
   <div class="modal-body">
-
+    {{mensaje}}
   </div>
   <div class="modal-footer">
-    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Cerrar click')">Cerrar</button>
   </div>
-</ng-template> -->
+</ng-template>
 
 <router-outlet></router-outlet>
